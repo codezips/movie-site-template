@@ -1,0 +1,171 @@
+h3{
+ 
+  position: relative;
+  text-transform: uppercase;
+}
+h3 b{
+  color:#ff5900;
+}
+.top-rated-container{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*top rated movies carousel design */
+
+#carouselInner .carousel-item.active,
+#carouselInner .carousel-item-next,
+#carouselInner .carousel-item-prev {
+  display: flex;
+}
+
+#carouselInner .carousel-item-right.active,
+#carouselInner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+#carouselInner .carousel-item-left.active, 
+#carouselInner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+  
+#carouselInner .carousel-item-right,
+#carouselInner .carousel-item-left{ 
+  transform: translateX(0);
+  
+}
+
+/* best movies carousel design */
+#medCarousel{
+  height: 530px;
+  width: 100%;
+}
+#carouselMedium .carousel-item{
+  height: 520px;
+}
+
+#carouselMedium .carousel-item.active,
+#carouselMedium .carousel-item-prev,
+#carouselMedium .carousel-item-next{
+  display: flex;
+}
+#carouselMedium .carousel-item-right.active,
+#carouselMedium .carousel-item-next{
+  transform: translateX(25%);
+}
+#carouselMedium .carousel-item-left.active, 
+#carouselMedium .carousel-item-prev {
+  transform: translateX(-25%);
+}
+#carouselMedium .carousel-item-right,
+#carouselMedium .carousel-item-left{ 
+  transform: translateX(0);
+  
+}
+
+/* LESS THAN 62 */
+@media (max-width: 61.9em) {
+  #medCarousel{
+  height: 380px;
+  width: 100%;
+}
+#carouselMedium .carousel-item{
+  height: 350px;
+}
+  
+#carouselInner .carousel-item.active,
+#carouselInner .carousel-item-next,
+#carouselInner .carousel-item-prev {
+  display: flex;
+}
+
+#carouselInner .carousel-item-right.active,
+#carouselInner .carousel-item-next {
+  transform: translateX(33%);
+}
+
+#carouselInner .carousel-item-left.active, 
+#carouselInner .carousel-item-prev {
+  transform: translateX(-33%);
+}
+  
+#carouselInner .carousel-item-right,
+#carouselInner .carousel-item-left{ 
+  transform: translateX(0);
+
+}
+
+}
+/* LESS THAN 48 */
+@media (max-width: 47.9em) {
+#medCarousel{
+  height: 300px;
+  width: 100%;
+}
+#carouselMedium .carousel-item{
+  height: 285px;
+}
+
+ }
+ /* LESS THAN 34 */
+@media (max-width: 33.9em) {
+   #myThirdCarousel{
+margin:50px auto;
+padding:0 10px;
+
+}
+.top-rated-container > h3{
+  font-size: 15px;
+}
+#carouselInner .carousel-item{
+  width: 50%;
+  height: 150px;
+}
+#carouselM .carousel-item{
+  width: 50%;
+  height: 150px;
+}
+#carouselInner .carousel-item.active,
+#carouselInner .carousel-item-next,
+#carouselInner .carousel-item-prev {
+  display: flex;
+}
+
+#carouselInner .carousel-item-right.active,
+#carouselInner .carousel-item-next {
+  transform: translateX(100%);
+}
+
+#carouselInner .carousel-item-left.active, 
+#carouselInner .carousel-item-prev {
+  transform: translateX(-100%);
+}
+  
+#carouselInner .carousel-item-right,
+#carouselInner .carousel-item-left{ 
+  transform: translateX(0);
+
+}
+
+#medCarousel{
+  height: 230px;
+  width: 100%;
+}
+#carouselMedium .carousel-item{
+  height: 220px;
+}
+#carouselMedium .carousel-item-right.active,
+#carouselMedium .carousel-item-next{
+  transform: translateX(28%);
+}
+#carouselMedium .carousel-item-left.active, 
+#carouselMedium .carousel-item-prev {
+  transform: translateX(-28%);
+}
+#carouselMedium .carousel-item-right,
+#carouselMedium .carousel-item-left{ 
+  transform: translateX(0);
+  
+}
+}
+

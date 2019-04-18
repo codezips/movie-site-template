@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+$originColor:#ff5900;
+
+@mixin parentHover{
+	background-color:$originColor;
+	opacity:1;
+}
+@mixin btnOneAttributes{
+position:absolute;
+	top:50%;
+	left:25%;
+	width:auto;
+	background-color:white;
+	color:white;
+	transition:0.3s ease-in;
+	opacity:0;
+	display:block;
+	clear:both;
+}
+
+@keyframes squeeze{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight:bold;
+}
+header{
+	color:white;
+	background-color:$originColor;
+	width:100%;
+	height:15vh;
+	position:relative;
+}
+.brand{
+	font-size:25px;
+	font-weight:bold;
+	position:absolute;
+	margin-top:2%;
+}
+
+.right-div{
+	input[type=text]{
+	width:30%;
+	top:5px;
+	color:white;
+	background-color:$originColor;
+	text-align:center;
+	border:1px solid white;
+	position:relative;
+	}
+	button{
+	color:white;
+	background-color:$originColor;
+	position:absolute;
+	height:5vh;
+	width:15%;
+	margin-top:0.5%;
+	font-size:13px;
+	top:10px;
+	right:0;
+	border:3px solid white;
+	transition:0.1s ease-in;
+	}
+	button:hover{
+	color:black;
+	background-color:white;
+	}
+	.dropdown{
+	color:white;
+	background-color:$originColor;
+	}
+	li a{
+		color:white;
+	background-color:$originColor;
+	}
+}
+.my-nav{
+	color:white;
+	background-color:$originColor;
+	.nav-link{
+	color:white;
+	transition:0.1s ease-in;
+	}
+	.nav-link:hover{
+		transform:translateY(-10px);
+		
+	}
+}
+#myCarousel{
+	position:relative;
+	color:white;
+	.welcome{
+	width:80%;
+	top:20%;
+	left:10%;
+	position:absolute;
+
+	h2{
+	width:60%;
+	font-size:60px;
+	font-weight:700;
+	}
+	}
+	.welcome2{
+	position:absolute;
+		font-size:20px;
+		width:100%;
+	}
+}
+
+.sec-div{
+	.predator-parent{
+	opacity:1;
+	width:100%;
+	height:auto;
+	background:black;
+	position:relative;
+	box-shadow: 5px 5px 10px;
+	transition:0.3s ease-in;
+	}
+	.predator-parent > img{
+	transition:0.3s ease-in;
+	width:100%;
+	}
+	.predator-parent:hover > img{
+	opacity:0.5;
+	}
+	.rampage-parent > img{
+	width:100%;
+	transition:0.3s ease-in;
+	}
+	.rampage-parent:hover > img{
+	opacity:0.5;
+	}
+	.blackpanther-parent > img{
+	width:100%;
+	transition:0.3s ease-in;
+	}
+	.blackpanther-parent:hover > img{
+	opacity:0.5;
+	}
+	.mazerunner-parent > img{
+	width:100%;
+	transition:0.3s ease-in;
+	}
+	.mazerunner-parent:hover > img{
+	opacity:0.5;
+	}
+	.rampage-parent{
+	box-shadow: 5px 5px 10px;
+	position:relative;
+	background:black;
+	}
+	.blackpanther-parent{
+	box-shadow: 5px 5px 10px;
+	position:relative;
+	background:black;
+	}
+	.mazerunner-parent{
+	box-shadow: 5px 5px 10px;
+	position:relative;
+	background:black;
+	}
+
+	.slider > button{
+		@include btnOneAttributes;
+		
+	}
+	.predator-parent:hover > .slider > button{
+	@include parentHover;
+	}
+	.rampage-parent:hover > .slider > button{
+	@include parentHover;
+	}
+	.blackpanther-parent:hover > .slider > button{
+	@include parentHover;
+	}
+	.mazerunner-parent:hover > .slider > button{
+	@include parentHover;
+	}
+}
+
+.transparent-div{
+	background-color:#1d1d1d;
+	margin-top:5%;
+	transition:0.3s ease-in;
+	img{
+	margin-top:5%;
+	box-sizing:2px solid yellow;
+	}
+	img:hover{
+	}
+	button{
+	color:white;
+	font-size:auto;
+	background-color:$originColor;
+	}
+	h3{
+	font-size:50px;  
+	border-top:5px solid #ff5900;
+	}
+	p{
+	font-size:20px;
+	}
+}
+.now-showing{
+	border:20px 20px 20px;
+	background-color:#1d1d1d;
+
+	.now-showing-container{
+	background-color:#ffffff;
+	}
+	h2{
+		filter:blur(0px);
+
+	}
+}
